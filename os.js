@@ -1,0 +1,21 @@
+const os = require("os");
+//Main Functions of os
+console.log("Architecture",os.arch());
+console.log("Platform",os.platform());
+console.log("OS type",os.type());
+console.log("System Uptime",os.uptime());
+console.log("HostName",os.hostname());
+console.log("User Info:", os.userInfo());
+console.log("Total Memory:", os.totalmem());
+console.log("Free Memory:", os.freemem());
+console.log("CPU Info:", os.cpus());
+console.log("Network Interfaces:", os.networkInterfaces());
+console.log("=== System Information ===");
+console.log("Hostname:", os.hostname());
+console.log("OS Type:", os.type());
+console.log("Platform:", os.platform());
+console.log("Release:", os.release());
+console.log("Architecture:", os.arch());
+console.log("Total Memory (GB):", (os.totalmem() / (1024 ** 3)).toFixed(2));
+console.log("Free Memory (GB):", (os.freemem() / (1024 ** 3)).toFixed(2));
+console.log("Uptime (hours):", (os.uptime() / 3600).toFixed(2));
